@@ -5,7 +5,7 @@
 ![dep](https://img.shields.io/david/SlimIO/validate-addon-name)
 ![size](https://img.shields.io/github/languages/code-size/SlimIO/validate-addon-name)
 [![Known Vulnerabilities](https://snyk.io//test/github/SlimIO/validate-addon-name/badge.svg?targetFile=package.json)](https://snyk.io//test/github/SlimIO/validate-addon-name?targetFile=package.json)
-[![Build Status](https://travis-ci.com/SlimIO/validate-addon-name.svg?branch=master)](https://travis-ci.com/SlimIO/validate-addon-name)
+[![Build Status](https://travis-ci.com/SlimIO/validate-addon-name.svg?branch=master)](https://travis-ci.com/SlimIO/validate-addon-name) [![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/validate-addon-name.svg)](https://greenkeeper.io/)
 
 SlimIO Addon name validator/sanitizer. This package has been created to centralize **validation** and **sanitization** of addons names. So if tomorrow we decide to change the way addon name are constructed we only need to update the package everywhere.
 
