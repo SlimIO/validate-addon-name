@@ -2,9 +2,26 @@
 
 // Require Third-party Dependencies
 const test = require("japa");
+const is = require("@slimio/is");
 
 // Require Internal Dependencies
-const { validate, sanitize } = require("../index");
+const validateAddonName = require("../index");
+const { validate, sanitize, CONSTANTS } = validateAddonName;
+
+test("module.exports", (assert) => {
+    assert.isTrue(is.plainObject(validateAddonName));
+    assert.deepEqual(Object.keys(validateAddonName), [
+        "validate",
+        "sanitize",
+        "CONSTANTS"
+    ]);
+});
+
+test("CONSTANTS", (assert) => {
+    assert.isTrue(Object.isFrozen(CONSTANTS));
+    assert.deepEqual(Object.keys(CONSTANTS), ["VALIDATE_REGEX"]);
+    assert.isTrue(typeof CONSTANTS.VALIDATE_REGEX === "string");
+});
 
 test("validate", (assert) => {
     assert.strictEqual(validate({}), false);

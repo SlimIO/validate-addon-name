@@ -46,11 +46,23 @@ Validate and return a boolean to tell if the name is a valid and acceptable name
 validate(10); // false
 ```
 
-### function sanitize(addonName: string): string
+### sanitize(addonName: string): string
 Remove non-valid (wide) characters from a given string. This method will throw a TypeError if **addonName** is not a string primitive.
 
 ```js
 sanitize(10); // Throw
+```
+
+### CONSTANTS
+The package export a freezed **CONSTANTS** object that contain a **VALIDATE_REGEX** key.
+
+```js
+const { validate, CONSTANTS } = require("@slimio/validate-addon-name");
+
+const addonName = "Addon";
+if (!validate(addonName)) {
+    console.log(`addon '${addonName}' not matching expected regex ${CONSTANTS.VALIDATE_REGEX}`)
+}
 ```
 
 ## Dependencies

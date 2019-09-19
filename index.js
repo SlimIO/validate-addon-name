@@ -4,6 +4,9 @@
  * @namespace AddonName
  */
 
+// CONSTANTS
+const VALIDATE_REGEX = "^[0-9a-z]{2,30}$";
+
 /**
  * @function validate
  * @description validate and return a boolean to tell if the name is a valid and acceptable name for SlimIO.
@@ -48,4 +51,8 @@ function sanitize(addonName) {
     return addonName.replace(/[^0-9a-z]/gi, "").trim().toLowerCase().normalize();
 }
 
-module.exports = { validate, sanitize };
+module.exports = {
+    validate,
+    sanitize,
+    CONSTANTS: Object.freeze({ VALIDATE_REGEX })
+};
