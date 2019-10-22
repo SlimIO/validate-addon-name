@@ -54,6 +54,13 @@ Remove non-valid (wide) characters from a given string. This method will throw a
 sanitize(10); // Throw
 ```
 
+### decamelize(str: string): string
+Decamelize a string and transform it to **snake_case**.
+
+```js
+decamelize("sayHello"); // say_hello
+```
+
 ### CONSTANTS
 The package export a freezed **CONSTANTS** object that contain a **VALIDATE_REGEX** key.
 
