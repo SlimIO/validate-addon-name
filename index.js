@@ -53,10 +53,13 @@ function sanitize(addonName) {
 
 /**
  * @function decamelize
- * @memberof Utils#
+ * @memberof AddonName#
  * @description decamelize a given string
  * @param {!string} text
  * @returns {string}
+ *
+ * @example
+ * console.log(decamelize("sayHello")); // say_hello
  */
 function decamelize(text) {
     if (typeof text !== "string") {

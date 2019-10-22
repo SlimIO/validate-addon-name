@@ -11,7 +11,7 @@
 SlimIO Addon name validator/sanitizer. This package has been created to centralize **validation** and **sanitization** of addons names. So if tomorrow we decide to change the way addon name are constructed we only need to update the package everywhere.
 
 ## Requirements
-- [Node.js](https://nodejs.org/en/) v10 or higher
+- [Node.js](https://nodejs.org/en/) v12 or higher
 
 ## Getting Started
 
